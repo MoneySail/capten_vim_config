@@ -1,0 +1,11 @@
+==> _.snippets <==
+# 基于下行TM的出口抓包
+snippet oetm 
+	dis tm sl ${0} chip-id 1 egressout
+# 基于offset进行抓包
+# 基于Q窗
+snippet poff
+	set fe packet rule ${1} offset 1 q-register ${2} ${3} ${4} ffffffff
+# 基于R窗
+snippet qoff
+	set fe packet rule ${1} offset 1 r-register ${2} ${3} ${4} ffffffff

@@ -1,0 +1,613 @@
+# Global snippets
+
+# (c) holds no legal value ;)
+snippet c)
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${1:`g:snips_author`}. All Rights Reserved.
+snippet date
+	`strftime("%Y-%m-%d")`
+snippet ddate
+	`strftime("%B %d, %Y")`
+snippet diso
+	`strftime("%Y-%m-%dT%H:%M:%S")`
+snippet time
+	`strftime("%H:%M")`
+
+snippet datetime
+	`strftime("%Y-%m-%d %H:%M")`
+snippet lorem
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+snippet GPL2
+	${1:One line to give the program's name and a brief description.}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${2:`g:snips_author`}
+
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation; either version 2 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, see <http://www.gnu.org/licenses/>.
+	${0}
+snippet LGPL2
+	${1:One line to give the program's name and a brief description.}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${2:`g:snips_author`}
+
+	This library is free software; you can redistribute it and/or modify
+	it under the terms of the GNU Lesser General Public License as published
+	by the Free Software Foundation; either version 2.1 of the License, or
+	(at your option) any later version.
+
+	This library is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+	GNU Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General Public License
+	along with this library; if not, see <http://www.gnu.org/licenses/>.
+	${0}
+snippet GPL3
+	${1:one line to give the program's name and a brief description.}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${2:`g:snips_author`}
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	${0}
+snippet LGPL3
+	${1:One line to give the program's name and a brief description.}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${2:`g:snips_author`}
+
+	This library is free software; you can redistribute it and/or modify
+	it under the terms of the GNU Lesser General Public License as published
+	by the Free Software Foundation; either version 3 of the License, or
+	(at your option) any later version.
+
+	This library is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+	GNU Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General Public License
+	along with this library; if not, see <http://www.gnu.org/licenses/>.
+	${0}
+snippet AGPL3
+	${1:one line to give the program's name and a brief description.}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${2:`g:snips_author`}
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Affero General Public License as
+	published by the Free Software Foundation, either version 3 of the
+	License, or (at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Affero General Public License for more details.
+
+	You should have received a copy of the GNU Affero General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	${0}
+snippet GMGPL linking exception
+	As a special exception, if other files instantiate generics from
+	this unit, or you link this unit with other files to produce an
+	executable, this unit does not by itself cause the resulting
+	executable to be covered by the GNU General Public License.
+	This exception does not however invalidate any other reasons why the
+	executable file might be covered by the GNU Public License.
+
+	${0}
+snippet BSD2
+	${1:one line to give the program's name and a brief description}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${2:`g:snips_author`}
+	All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions are met:
+	1. Redistributions of source code must retain the above copyright
+	notice, this list of conditions and the following disclaimer.
+	2. Redistributions in binary form must reproduce the above copyright
+	notice, this list of conditions and the following disclaimer in the
+	documentation and/or other materials provided with the distribution.
+
+	THIS SOFTWARE IS PROVIDED BY $2 ''AS IS'' AND ANY
+	EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+	DISCLAIMED. IN NO EVENT SHALL $2 BE LIABLE FOR ANY
+	DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+	The views and conclusions contained in the software and documentation
+	are those of the authors and should not be interpreted as representing
+	official policies, either expressed or implied, of $2.
+	${0}
+snippet BSD3
+	${1:one line to give the program's name and a brief description}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${2:`g:snips_author`}
+	All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions are met:
+	1. Redistributions of source code must retain the above copyright
+	notice, this list of conditions and the following disclaimer.
+	2. Redistributions in binary form must reproduce the above copyright
+	notice, this list of conditions and the following disclaimer in the
+	documentation and/or other materials provided with the distribution.
+	3. Neither the name of the ${3:organization} nor the
+	names of its contributors may be used to endorse or promote products
+	derived from this software without specific prior written permission.
+
+	THIS SOFTWARE IS PROVIDED BY $2 ''AS IS'' AND ANY
+	EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+	DISCLAIMED. IN NO EVENT SHALL $2 BE LIABLE FOR ANY
+	DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+	${0}
+snippet BSD4
+	${1:one line to give the program's name and a brief description}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${2:`g:snips_author`}
+	All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions are met:
+	1. Redistributions of source code must retain the above copyright
+	notice, this list of conditions and the following disclaimer.
+	2. Redistributions in binary form must reproduce the above copyright
+	notice, this list of conditions and the following disclaimer in the
+	documentation and/or other materials provided with the distribution.
+	3. All advertising materials mentioning features or use of this software
+	must display the following acknowledgement:
+	This product includes software developed by the ${3:organization}.
+	4. Neither the name of the $3 nor the
+	names of its contributors may be used to endorse or promote products
+	derived from this software without specific prior written permission.
+
+	THIS SOFTWARE IS PROVIDED BY $2 ''AS IS'' AND ANY
+	EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+	DISCLAIMED. IN NO EVENT SHALL $2 BE LIABLE FOR ANY
+	DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+	${0}
+snippet MIT
+	${1:one line to give the program's name and a brief description}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${2:`g:snips_author`}
+
+	Permission is hereby granted, free of charge, to any person obtaining
+	a copy of this software and associated documentation files (the "Software"),
+	to deal in the Software without restriction, including without limitation
+	the rights to use, copy, modify, merge, publish, distribute, sublicense,
+	and/or sell copies of the Software, and to permit persons to whom the
+	Software is furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included
+	in all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+	OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+	IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+	TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+	OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+	${0}
+snippet APACHE
+	${1:one line to give the program's name and a brief description}
+	Copyright `strftime("%Y")` ${2:`g:snips_author`}
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+	${0}
+snippet BEERWARE
+	${1:one line to give the program's name and a brief description}
+	Copyright `strftime("%Y")` ${2:`g:snips_author`}
+
+	Licensed under the "THE BEER-WARE LICENSE" (Revision 42):
+	$2 wrote this file. As long as you retain this notice you
+	can do whatever you want with this stuff. If we meet some day, and you think
+	this stuff is worth it, you can buy me a beer or coffee in return
+	${0}
+snippet WTFPL
+			DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+					Version 2, December 2004
+
+	Copyright `strftime("%Y")` ${0:`g:snips_author`}
+
+	Everyone is permitted to copy and distribute verbatim or modified
+	copies of this license document, and changing it is allowed as long
+	as the name is changed.
+
+			DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+	TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+	 0. You just DO WHAT THE FUCK YOU WANT TO.
+
+	${0}
+snippet MPL2
+	This Source Code Form is subject to the terms of the Mozilla Public
+	License, v. 2.0. If a copy of the MPL was not distributed with this
+	file, You can obtain one at http://mozilla.org/MPL/2.0/.
+	${0}
+snippet AGPL
+	${1:One line to give the program's name and a brief description.}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${2:`g:snips_author`}
+
+	This program  is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Affero General Public License as
+	published by the Free Software Foundation, either version 3 of the
+	License, or (at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Affero General Public License for more details.
+
+	You should have received a copy of the GNU Affero General Public License
+	along with this program. If not, see <http://www.gnu.org/licenses/>.
+snippet ISC
+	${1:one line to give the program's name and a brief description}
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")`, ${2:`g:snips_author`}
+
+	Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+	THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+	${0}
+### Personal Snippets
+# 普通新增简单注释
+snippet g_sh
+	/*-----     ${1}     -----*/
+# 带时间的新增简短注释
+snippet g_st
+	/*-----     added by qianfan,  ${1} `strftime("%Y-%m-%d")`     -----*/
+# 带时间的修改简短注释
+snippet m_st
+	/*-----     modified by qianfan,  ${1} `strftime("%Y-%m-%d")`     -----*/
+### 抓包快捷指令输出
+## 基础指令
+# 查看大包的基本信息
+snippet dsr
+	dis fe sl ${1} fe 0 dev reg ver
+# ldm基于接口发送抓包
+snippet lis
+	debugging ldm pac send arp int ${1} num 1 cap 64
+# ldm基于接口接收抓包
+snippet lir
+	debugging ldm pac rec arp int ${1} num 1 cap 64
+# HAL发送抓包,查看LDM是否下发ARP报文给微码
+snippet hsa
+	debugging fe sl ${1} fe 0 fe-debug ldm 0 number 10
+# 查看HAL是否上送CauseID
+snippet hca
+	debugging fe sl ${1} fe 0 fe-debug packet ${2} number 1
+# 上行入口抓包
+snippet ii
+	set fe sl ${1} fe 0${2} pac ingress in l2eth
+# 上行Special入口转包
+snippet is
+	set fe sl ${1} fe 0${2} pac l2specdecap
+# 上行出口抓包
+snippet io
+	set fe sl ${1} fe 0${2} pac ingress out
+# 下行入口抓包
+snippet oi
+	set fe sl ${1} fe 0${2} pac egress in all
+# 下行出口抓包
+snippet oo
+	set fe sl ${1} fe 0${2} pac egress out-main
+# 下行出口抓包(基于channel)
+snippet ooc
+	dis fe sl ${1} fe 0${2} pac egress out-main channel ${3}
+# 基于入接口抓单包
+snippet isp
+	dis fe sl ${1} pac 1${2} int gi${3} inbound
+# 基于出接口抓单包
+snippet osp
+	dis fe sl ${1} pac 1${2} int ${3} outbound
+# 基于丢弃CauseId抓单包
+snippet cdp
+	dis fe sl ${1} fe 0${2} packet discard ${3}
+# 基于上送CauseId抓单包
+snippet ctp
+	dis fe sl ${1} fe 0${2} packet to-cp ${3}
+# 基于Bundle抓包
+snippet spb
+	dis fe sl ${1} fe 0${2} packet bundle ${3}
+# 抓CPU下发到NP的包
+snippet psp
+	dis fe sl ${1} fe 0${2} packet l2specdecap
+## 设置规则抓包
+# 设置基于目的mac抓包
+snippet sdm
+	set fe pac rule 1${1} mac destination-mac ${2}
+# 设置基于源,目的IP抓包规则
+snippet sdi
+	set fe pac rule 1${1} ip source ${2} 255.255.255.255 destination ${3} 255.255.255.255
+# 查看微码上送HAL的CPU计数
+snippet thal
+	dis fe sl ${1} dev cpu-counter
+# 查看微码上送HAL的CAUSE报文内容
+snippet thp
+	debugging fe sl ${1} fe 0${3} fe-debug packet ${2} number 1
+# 基于指针进行抓包
+snippet dpr
+	dis fe sl ${1} fe 0${2} packet arbitrary ${3}
+## 各种查表的操作
+## 基于接口查表的操作
+# 基于接口查看IPAT表
+snippet tip
+	dis fe sl ${1} fe 0${2} table ipct int ${3}
+# 查看子接口的ICIB表
+snippet tic
+	dis fe sl ${1} fe 0${0} table ivct int gi${2} vlan 0
+# 查看子接口的QINQ ICIB表
+snippet tqic
+	dis fe sl ${1} fe 0${0} table iqvct int gi${2} pe-vlan ${3} ce-vlan ${4}
+# 基于接口查看EPAT表
+snippet tep
+	dis fe sl ${1} table epct int ${2}
+# 基于接口查看ECIB表
+snippet tec
+	dis fe sl ${1} fe 0${2} table evct int ${3} vlan 0
+# 查看子接口的QINQ ECIB表
+snippet tqec
+	dis fe sl ${1} fe 0${0} table eqvct int gi${2} pe-vlan ${3} ce-vlan ${4}
+# 查看ifindexcontex表
+snippet tifi
+	dis fe sl ${1} fe 0${0} table ifindexcontex interface gi${2}
+# 查看vlanif表
+snippet tvif
+	dis fe sl ${1} fe 0${0} table vlanif interface gi${2}
+# 查看trunk表
+snippet ttru
+	dis fe sl ${1} fe 0${0} table trunk interface gi${2}
+# 查看PST状态
+snippet pst
+	dis fe sl ${1} fe 0${0} table port-status-table
+# 单播表项
+# NST表
+snippet tnst
+	dis fe sl ${1} fe 0${0} table nexthop ${2}
+# NHP表
+snippet tnhp
+	dis fe sl ${1} fe 0${0} table nhp ${2}
+# ARP表
+snippet tarp
+	dis fe sl ${1} fe 0${0} arp destinatio-ip ${2}.${3}.${4}.${5} ${6} ${7}
+# 查看IPV4转发路由
+snippet ir4
+	dis fe sl ${1} fe 0${0} table ipv4-route-entry destination-ip ${2}.${3}.${4}.${5} mask 32 vpn 0
+# 查看IPV6转发路由
+snippet ir6
+	dis fe sl ${1} fe 0${0} table ipv6-route-entry ${2}:${3}::${4}:${5} mask 128 vpnid 0
+# NDH表
+snippet tndh
+	dis fe sl ${1} fe 0${0} table ndh ipv6-destination ${2}:${3}::${4}:${5} ${6} ${7}
+# ND表
+snippet tnd
+	dis fe sl ${1} fe 0${0} table nd ${2}
+# AT表
+snippet tat
+	dis fe sl ${1} fe 0${0} table at ${2}
+# MPLS 表格信息
+# 标签表
+snippet tins
+	dis fe sl ${1} fe 0${0} table insegment ${2}
+# AIB表
+snippet taib
+	dis fe sl ${1} fe 0${0} table outsegment ${2}
+# MPLS ARP表
+snippet marp
+	dis fe sl ${1} fe 0${0} table mpls-arp ${2}
+
+
+# 接口Car上行信息
+snippet tci
+	dis fe sl ${1} fe 0${2} table interface-car ingress ${3}
+# 接口Car下行信息
+snippet tce
+	dis fe sl ${1} fe 0${2} table interface-car egress ${3}
+# 基于出接口抓包
+snippet ito
+	set fe sl ${1} packet 1${0} interface ${2} outbound
+# 接入入接口抓包
+snippet iti
+	set fe sl ${1} packet 1${0} interface ${2} inbound
+# 基于CAUSEID查看安全的表项
+snippet tsc
+	dis fe sl ${1} table security-cause ${2}
+# 查看TB/TP
+snippet tbp
+	dis feic frame ifnet-map-info
+## 跟子卡相关的设置查询
+# 查看子卡丢弃计数
+snippet pds
+	dis fe sl ${1} card ${2} statistic drop
+# 查看子卡反压状态
+snippet pbs
+	dis fe sl ${1} card ${2} backpressure input-output
+## 跟TM相关的设置查询
+# 基于下行TM的入口抓包
+snippet ietm
+	dis tm sl ${1} chip-id ${2} pac egressin
+# 基于下行TM的出口抓包
+snippet oetm
+	dis tm sl ${1} chip-id ${2} pac egressout
+# 基于offset进行抓包
+# 基于Q窗
+snippet qof
+	set fe packet rule 1${4} offset 1 q-register ${1} h${2} ${3} ffff
+# 基于R窗
+snippet rof
+	set fe packet rule ${1} offset 1 r-register ${2} ${3} ${4} ffffffff
+## 异常状态命令查询
+# 线程HALT状态查询
+snippet ths
+	dis fe sl ${1} fe ${2} device register thread status ${3} | inc HALT
+# 查看线程halt数据
+snippet thhd
+	dis fe sl ${1} fe ${2} reg thread ${3} ${4} ${5} all
+# 查看寄存器反压
+snippet rbs
+	dis fe sl ${1} fe ${2} device register backpressure
+# 查看rb统计
+snippet srb
+	dis fe sl ${1} fe 0${0} dev register statistics rb
+# 查看中断异常状态
+snippet iab
+	dis fe sl ${1} fe ${2} device register interrupt all
+# 查看异常状态
+snippet eab
+	dis fe sl ${1} fe ${2} device register exception statistics all
+# 查看lfe是否up
+snippet msf
+	dis fe sl ${1} msfm state fedepend
+# 设置断点
+snippet sb
+	set fe sl ${1} fe 0${3} debug breakpoint ${2} 0
+# 删除断点
+snippet db
+	set fe sl ${1} fe 0${3} debug breakpoint delete ${2}
+# 开始自发包发送
+snippet txa
+	test fe sl ${1} fe 0 packet send xa 1 256 1 0 0 0
+# 停止自发包发送
+snippet exa
+	test fe sl ${1} fe 0 packet stop xa
+# 开启FMEA
+snippet sfm
+	set fe sl ${1} frame ffm check fmea start
+# 关闭FMEA
+snippet efm
+	set fe sl ${1} frame ffm check fmea stop
+# 开启trace
+snippet tra
+	set fe sl ${1} fe 0${0} device pc trace
+# 查看心跳状态
+snippet hbs
+	dis fe sl ${1} fe ${2} heartbeat status
+# 关闭心跳
+snippet chb
+	set fe sl ${1} fe ${2} heartbeat all close
+# 开启心跳
+snippet bhb
+	set fe sl ${1} fe ${2} heartbeat all start
+# 查看Scratch寄存器
+snippet scrs
+	dis fe sl ${1} fe ${2} dev register scratch
+# # 此处添加的Snippets的内容为 BAT批处理变量的SNIPPETS片段
+# 此处添加的为批处理头文件注释的内容
+snippet bfh
+	:: FileName : `expand("%")`
+	:: Author   : q00442720
+	:: Time     : `strftime("%Y-%m-%d %H:%M:%S")`
+	:: Brief    : ${1}
+# 此处添加的为批处理头文件简要注释的内容
+snippet bst
+	:: Added by q00442720 `strftime("%Y-%m-%d")`, ${1}
+	:: Brief: ${2}
+snippet bsh
+	::-----     ${1}     -----::
+snippet bss
+	::---   ${1}   ---::
+
+# 通用注释，主要包含C++/C/ASM/微码/H文件
+# 时间注释
+snippet gt
+	`strftime("%Y-%m-%d %H:%M:%S")`
+# 标题的等号隔开符
+snippet gte
+	==========
+	${1}
+	==========
+
+# 超短注释
+snippet gqs
+	/* ${1} */
+# 不带时间简短注释
+snippet gss
+	/*-----   ${1}   -----*/
+# 注释中的长横线(lens => 60)
+snippet gl
+	--------------------------------------------------------------------------------
+# 带时间作者长段落注释
+snippet gpl
+	/*------------------------------------------------------------
+                  added by q00442720, `strftime("%Y-%m-%d")`
+                  ${1}
+                  ${2}
+	------------------------------------------------------------*/
+# 不带时间作者短段落注释
+snippet gps
+	/*------------------------------
+		${1}
+	------------------------------*/
+
+# 不带时间注释
+snippet gsh
+	/*----------     ${1}     ----------*/
+# 带时间注释
+snippet gst
+	/*----------b     added by q00442720, ${0} `strftime("%Y-%m-%d")`    b ----------*/
+	/*----------e     added by q00442720, ${0} `strftime("%Y-%m-%d")`    e ----------*/
+# 带时间修改注释
+snippet mst
+	/*----------b     modified by q00442720, ${0} `strftime("%Y-%m-%d")`    b----------*/
+	/*----------e     modified by q00442720, ${0} `strftime("%Y-%m-%d")`    e----------*/
+# 代码注释
+snippet mnu
+	/*----------     modified by q00442720, comment out no used code `strftime("%Y-%m-%d")`     ----------*/
+# 微码函数注释
+snippet gfu
+	/** * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+	 * FuncName  : ${1}
+	 * Author    : q00442720
+	 * Brief     : ${2}
+	 * CreateTime: `strftime("%Y-%m-%d %H:%M:%S")`
+	 * Version   : V1.00
+	 * Revision  : ${3}
+	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+# 微码Bundle注释
+snippet gbu
+	 /** * * * * * * * * * * * * * * * * * * *
+	 * Bundle    : ${1}
+	 * Author    : q00442720
+	 * Brief     : ${2}
+	 * CreateTime: `strftime("%Y-%m-%d %H:%M:%S")`
+	 * Version   : V1.00
+	 * Revision  : ${3}
+	 * * * * * * * * * * * * * * * * * * * * */
