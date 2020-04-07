@@ -51,7 +51,7 @@ call plug#end()
 
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='onedark'
-colorscheme Monokai
+colorscheme onedark
 
 " TABº¸…Ë÷√
 set ts=4
@@ -200,5 +200,5 @@ let g:fzf_commands_expect = 'alt-enter,ctrl-x'
 nnoremap <silent> <Leader>f :Files<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <Leader>g :GFiles<CR>
-nnoremap <silent> <Leader>r :Rg<CR>
+nnoremap <silent> <Leader>r :Rg <C-R><C-W><CR>
 nnoremap <silent> <Leader>i :Lines<CR>
